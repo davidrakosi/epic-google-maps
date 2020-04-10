@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EPIC GOOGLE MAPS PROJECT</title>
+    <script src="js/store-data.js"></script>
+    <script src="js/index.js"></script>
+    <link rel="stylesheet" href="style/style.css">
+    <script src="https://kit.fontawesome.com/c939d0e917.js"></script>
+</head>
+
+<body style="position: relative;">
+    <div class="title">Where's Starbucks?</div>
+
+    <div class="search-container">
+        <div class="search">
+            <input id="zip-code-input" type="text" placeholder="Enter ZIP" />
+            <i class="fas fa-search" onclick="searchStores()"></i>
+            <i class="fas fa-times" onclick="clearSearch()"></i>
+        </div>
+    </div>
+
+    <div class="stores-list-container">
+        <div class="stores-list">
+            <div class="store-container">
+                <div class="store-info-container">
+                    <div class="store-address">
+                        <span>818 W 6th Ave</span>
+                        <span>Vancouver, BC V5Z 1A6</span>
+                    </div>
+                    <div class="store-phone-number">(604) 564-0440</div>
+                </div>
+                <div class="store-number-container">
+                    <div class="store-number">
+                        1
+                    </div>
+                </div>
+                <div class="store-direct-contact">
+                    <a href="mailto:examplemailaddress@norealemail.com">
+                        <i class="far fa-envelope"></i>
+                    </a>
+                    <a href="tel:555-555-5555">
+                        <i class="fas fa-mobile-alt"></i>
+                    </a>
+                    <a href="https://www.facebook.com/carderobottega/" target="_blank">
+                        <i class="fab fa-safari"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="store-container">
+                <div class="store-address">
+                    1016 Cardero St<br>
+                    Vancouver, BC V6G 2H1
+                </div>
+                <div class="store-phone-number">
+                    (604) 689-0450
+                </div>
+                <div class="store-direct-contact">
+                    <a href="mailto:examplemailaddress@norealemail.com">
+                        <i class="far fa-envelope"></i>
+                    </a>
+                    <a href="tel:555-555-5555">
+                        <i class="fas fa-mobile-alt"></i>
+                    </a>
+                    <a href="https://www.facebook.com/carderobottega/" target="_blank">
+                        <i class="fab fa-safari"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="store-container">
+                <div class="store-address">
+                    111 Dunsmuir St<br>
+                    Vancouver, BC V6B 5W3
+                </div>
+                <div class="store-phone-number">
+                    (604) 669-9640
+                </div>
+                <div class="store-direct-contact">
+                    <a href="mailto:examplemailaddress@norealemail.com">
+                        <i class="far fa-envelope"></i>
+                    </a>
+                    <a href="tel:555-555-5555">
+                        <i class="fas fa-mobile-alt"></i>
+                    </a>
+                    <a href="https://www.facebook.com/carderobottega/" target="_blank">
+                        <i class="fab fa-safari"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="map"></div>
+
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcwazb-T7zvceyA4VLWVB-eXvwj-XEUIA&callback=initMap">
+        </script>
+</body>
+
+</html>
